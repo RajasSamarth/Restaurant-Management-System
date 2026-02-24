@@ -18,6 +18,9 @@ public class Customer {
 
     private String email;
 
+    @OneToOne(mappedBy = "customer")
+    private LoyaltyCard loyaltyCard;
+
     public Customer() {
     }
 
